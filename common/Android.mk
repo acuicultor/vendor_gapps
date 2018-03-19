@@ -52,6 +52,17 @@ LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := PrebuiltExchange3Google
+LOCAL_MODULE_OWNER := gapps
+LOCAL_SRC_FILES := proprietary/app/PrebuiltExchange3Google/PrebuiltExchange3Google.apk
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := APPS
+LOCAL_DEX_PREOPT := false
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleBackupTransport
 LOCAL_MODULE_OWNER := gapps
 LOCAL_SRC_FILES := proprietary/priv-app/GoogleBackupTransport/GoogleBackupTransport.apk
@@ -161,18 +172,6 @@ LOCAL_MODULE := SetupWizard
 LOCAL_MODULE_OWNER := gapps
 LOCAL_SRC_FILES := proprietary/priv-app/SetupWizard/SetupWizard.apk
 LOCAL_OVERRIDES_PACKAGES := Provision
-LOCAL_CERTIFICATE := PRESIGNED
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_PRIVILEGED_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := Velvet
-LOCAL_MODULE_OWNER := gapps
-LOCAL_SRC_FILES := proprietary/priv-app/Velvet/Velvet.apk
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS

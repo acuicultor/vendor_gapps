@@ -25,6 +25,7 @@ PRODUCT_PACKAGES += \
     GoogleCalendarSyncAdapter \
     GoogleContactsSyncAdapter \
     GoogleExtShared \
+    PrebuiltExchange3Google \
     GoogleBackupTransport \
     GoogleExtServices \
     GoogleFeedback \
@@ -37,6 +38,5 @@ PRODUCT_PACKAGES += \
 ifeq ($(TARGET_IS_GROUPER),)
 
 PRODUCT_PACKAGES += \
-    SetupWizard \
-    Velvet
+    SetupWizard
 endif
